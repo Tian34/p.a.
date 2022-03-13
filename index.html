@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+
+		
+
+		.titulo{
+			font-size: 300%; 
+			position: absolute; 
+			top: -5%; 
+			left: 10%;
+			background-color: #666f88;
+			padding-top: 5px;
+			padding-left: 8px;
+			padding-right: 8px;
+			padding-bottom: 5px;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-weight: bolder;
+
+		}
+
+		.texto{
+			position: absolute;
+			top: 15%;
+			padding-left: 10px;
+		}
+		
+		.texto2{
+			position: absolute;
+			top: 60%;
+			padding-left: 10px;
+		}
+
+		.formula{
+			position: absolute;
+			top: 27%;
+			left: 10%;
+			font-size: 30px
+		}
+		.partesformula{
+			position: absolute;
+			top: 40%;
+			left: 13%;
+		}
+
+		.subtitulo{
+			position: absolute;
+			top: 3%;
+			left: 38%;
+			width: 20%;
+			height: 10%;
+			padding-left: 8%;
+			padding-bottom: 2%;
+			background-color: #788199;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+		}
+
+		.info{
+			position: absolute;
+			top: 26%;
+			left: 5%;
+		}
+
+		.datosingresados{
+			position: absolute;
+			top: 36%;
+			left: 10%;
+
+		}
+
+		.resultados1{
+			position: absolute;
+			top: 70%;
+			left: 30%;
+			background-color: #8990a2;
+			height: 10%;
+			width: 10%;
+			padding-left: 4.5%;
+			padding-top: 1%;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-weight: bolder;
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-bottom: 10px;
+		}
+		.resultados2{
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			background-color: #8990a2;
+			height: 10%;
+			width: 25%;
+			padding-left: 3%;
+			padding-top: 1%;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-weight: bolder;
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-bottom: 10px;
+		}
+
+		.ecuacion{
+			position: absolute;
+			bottom: 25%;
+			left: 5%;
+			font-size: 15px;
+
+		}
+
+		.progresion{
+			position: absolute;
+			bottom: 25%;
+			left: 5%;
+			font-size: 15px;
+		}
+
+		.caso0{
+			z-index: 1;
+			position: absolute;
+			top: 13%;
+			left: 5%;
+			width: 90%;
+			height: 75%;
+			background-color:#b5bac9;
+
+
+		}
+
+		.caso00{
+		
+			z-index: 1;
+			position: absolute;
+			top: 0%;
+			left: 15%;
+			width: 85%;
+			height: 99.4%;
+			background-color: #b5bac9;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+		}
+		
+		.caso1{
+			display: none;
+			z-index: 1;
+			position: absolute;
+			top: 0%;
+			left: 15%;
+			width: 85%;
+			height: 99.4%;
+			background-color: #a3a8b7;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+		}
+
+		.caso2{
+			display: none;
+			z-index: 1;
+			position: absolute;
+			top: 0%;
+			left: 15%;
+			width: 85%;
+			height: 99.4%;
+			background-color: #a3a8b7;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+		}
+
+		.caso3{
+			display: none;
+			z-index: 1;
+			position: absolute;
+			top: 0%;
+			left: 15%;
+			width: 85%;
+			height: 99.4%;
+			background-color: #a3a8b7;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+		}
+
+		.caso4{
+			display: none;
+			z-index: 1;
+			position: absolute;
+			top: 0%;
+			left: 15%;
+			width: 85%;
+			height: 99.4%;
+			background-color: #a3a8b7;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+		}
+
+		.botonc1{
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 10.5%;
+			height: 15.5%;
+			background-color: #788199;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-size: 2vw;
+			padding-left: 4.5%;
+			padding-top: 4.5%;
+			
+		}
+
+		.botonc1:hover {
+			background-color: #9BA5C0;
+			z-index: 10;
+		}
+
+		.botonc2{
+			position: absolute;
+			top: 25%;
+			left: 0%;
+			width: 10.5%;
+			height: 15.5%;
+			background-color: #788199;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-size: 2vw;
+			padding-left: 4.5%;
+			padding-top: 4.5%;
+
+		}
+
+		.botonc2:hover {
+			background-color: #9BA5C0;
+			z-index: 10;
+		}
+
+		.botonc3{
+			position: absolute;
+			bottom: 25%;
+			left: 0%;
+			width: 10.5%;
+			height: 15.5%;
+			background-color: #788199;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-size: 2vw;
+			padding-left: 4.5%;
+			padding-top: 4.5%;
+		}
+
+		.botonc3:hover {
+			background-color: #9BA5C0;
+			z-index: 10;
+		}
+
+		.botonc4{
+			position: absolute;
+			bottom: 0%;
+			left: 0%;
+			width: 10.5%;
+			height: 15.5%;
+			background-color: #788199;
+			border-style: solid;
+			border-color: black;
+			border-width: 2px;
+			font-size: 2vw;
+			padding-left: 4.5%;
+			padding-top: 4.5%;
+		}
+
+		.botonc4:hover {
+			background-color: #9BA5C0;
+			z-index: 10;
+		}
+
+   		.x{
+   			position: absolute;
+   			top: 4%;
+   			right: 3%;
+   			cursor: pointer;
+   			background-color: #F74747;
+   			border-radius: 100px;
+   			width: 2.5%;
+   			border-style: solid;
+   			border-width: 2px;
+   			font-weight: bold
+   			font-size: 3vw;
+   			padding-top: 0.5%;
+   			height: 4%
+   		}	
+
+	</style>
+</head>
+<body bgcolor="#8990a2">
+
+
+
+
+
+<div class="caso0">
+	
+<div id="boton1" onclick="cajacaso1();" style="cursor: pointer;" class="botonc1" id="boton1">Caso 1</div>
+<div id="boton2" onclick="cajacaso2();" style="cursor: pointer;" class="botonc2" id="boton2">Caso 2</div>
+<div id="boton3" onclick="cajacaso3();" style="cursor: pointer;" class="botonc3" id="boton3">Caso 3</div>
+<div id="boton4" onclick="cajacaso4();" style="cursor: pointer;" class="botonc4" id="boton4">Caso 4</div>
+
+<div class="caso1" id="cajacaso1">
+	<div class="subtitulo"> 
+<h1>Caso #1</h1>
+	</div>
+
+<div class="info">Cuando tenemos el primer dato, la distancia entre los terminos y una posicion cualquiera.</div>
+
+<br><br>
+<div style="font-weight: bolder;" class="datosingresados">
+<form>	
+	Primer dato de la progresion:	<input type="number" id="a1c1" placeholder="a1"><br><br>
+	Posicion de dato cualquiera en la progresion:	<input type="number" id="nc1" placeholder="n"><br><br>
+	Distancia entre terminos:	<input type="number" id="dc1" placeholder="d"><br><br>
+		<input type="button" name="" onclick="caso1()" value="Hacer :)">
+	</form></div>
+<div class="resultados1">
+	Ecuacion:
+	<div id="aka1" class="ecuacion"></div>
+</div>
+<br>
+<div class="resultados2">
+	Progresion:
+	<div id="aka11" class="progresion"></div>
+</div>
+
+<div onclick="cerrar();" class="x"><center>X</center></div>
+
+</div>
+
+<div class="caso2" id="cajacaso2">
+<div class="subtitulo"> 
+<h1>Caso #2</h1>
+	</div>
+
+<div class="info">Cuando tenemos el primer dato y la distancia entre los terminos. Ya que en este caso no tenemos un dato en especifico a buscar, n vale 0</div>
+<br><br>
+<div style="font-weight: bolder;" class="datosingresados">
+<form>
+	Primer dato de la progresion: <input type="number" id="a1c2" placeholder="a1"><br><br>
+	Distancia entre terminos: <input type="number" id="dc2" placeholder="d"><br><br>
+	<input type="button" name="" onclick="caso2()" value="Hacer :)">
+</form></div>
+
+<div class="resultados1">
+	Ecuacion:
+	<div id="aka2" class="ecuacion"></div>
+</div>
+<br>
+<div class="resultados2">
+	Progresion:
+	<div id="aka22" class="progresion"></div>
+</div>
+
+<div onclick="cerrar();" class="x"><center>X</center></div>
+
+</div>
+
+<div class="caso3" id="cajacaso3">
+<div class="subtitulo"> 
+<h1>Caso #3</h1>
+	</div>
+
+<div class="info">Cuando tenemos el primer dato y un dato cualquiera con su posicion. Solucionar esto es sencillo, primero se consigue la distancia con <br>esta formula: d=an-a1/(n-1).<br>Luego se reemplaza en la formula original</div>
+<br><br>
+<div style="font-weight: bolder; top: 40%;" class="datosingresados">
+<form>
+	Primer dato de la progresion: <input type="number" id="a1c3" placeholder="a1"><br><br>
+	Dato cualquiera de la progresion: <input type="number" id="anc3" placeholder="an"><br><br>
+	Posicion del dato cualquiera: <input type="number" id="nc3" placeholder="n"><br><br>
+	<input type="button" name="" onclick="caso3()" value="Hacer :)">
+</form>
+</div>
+<div class="resultados1">
+	Ecuacion:
+	<div id="aka3" class="ecuacion"></div>
+</div>
+<br>
+<div class="resultados2">
+	Progresion:
+	<div id="aka33" class="progresion"></div>
+</div>
+
+<div onclick="cerrar();" class="x"><center>X</center></div>
+
+</div>
+
+<div class="caso4" id="cajacaso4">
+<div class="subtitulo"> 
+<h1>Caso #4</h1>
+	</div>
+
+<div class="info">Cuando tenemos un dato cualquiera con su posicion y la distancia entre los terminos. Para esto solo tendremos que intercambiar a1 y an en la formula para conseguir el primer dato.</div>
+<br><br>
+<div style="font-weight: bolder;" class="datosingresados">
+<form>
+	Dato cualquiera de la progresion: <input type="number" id="anc4" placeholder="an"><br><br>
+	Posicion del dato cualquiera: <input type="number" id="nc4" placeholder="n"><br><br>
+	Distancia entre terminos: <input type="number" id="dc4" placeholder="d"><br><br>
+	<input type="button" name="" onclick="caso4()" value="Hacer :)">
+</form>
+</div>
+<div class="resultados1">
+	Ecuacion:
+	<div id="aka4" class="ecuacion"></div>
+</div>
+<br>
+<div class="resultados2">
+	Progresion:
+	<div id="aka44" class="progresion"></div>
+</div>
+
+<div onclick="cerrar();" class="x"><center>X</center></div>
+
+</div>
+
+<div class="caso00" id="cajacaso00">
+	
+<p class="titulo">Progresion aritmetica</p>
+
+<p class="texto">Una progresión aritmética es una sucesión de números tales que cada uno de ellos (salvo el primero) es igual al anterior más un número fijo <br> llamado diferencia que se representa por d. La formula para conseguir un numero de una posicion especifica de la progresion es:</p>
+
+<p style="font-weight: bolder;" class="formula">an= a1 + (n-1) * d</p>
+ <p class="partesformula">
+an = termino cualquiera a buscar<br>
+a1 = termino inicial <br>
+n = posicicon del termino en especifico a buscar<br>
+d =  separación/distancia entre términos<br>
+</p>
+<p class="texto2">
+	Al lado izquierdo veras distintos casos que son comunmente vistos a la hora de resolver estas clases de progresiones
+</p>
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+ array=[];
+function caso1() {
+	
+	a1=document.getElementById('a1c1').value;
+	n=document.getElementById('nc1').value;	
+	d=document.getElementById('dc1').value;
+	an=parseInt(a1)+(parseInt(n)-1)*parseInt(d);
+
+	for (var i = 0; i <= 5; i++) {
+		array[i]=parseInt(a1)+(parseInt(i)-1)*parseInt(d);
+	}
+
+	document.getElementById('aka1').innerHTML=" "+an+"="+a1+"+("+n+"-1)*"+d;
+	document.getElementById('aka11').innerHTML=" "+array;
+}
+
+function caso2() {
+	a1=document.getElementById('a1c2').value;
+	d=document.getElementById('dc2').value;
+	an=parseInt(a1)-parseInt(d);
+	n=((parseInt(an)-parseInt(a1))/parseInt(d))+1;
+
+	for (var i = 0; i <= 5; i++) {
+		array[i]=parseInt(a1)+(parseInt(i)-1)*parseInt(d);
+	}
+
+	document.getElementById('aka2').innerHTML=" "+an+"="+a1+"+("+n+"-1)*"+d;
+	document.getElementById('aka22').innerHTML=" "+array;
+}
+
+
+
+function caso3() {
+	n=document.getElementById('nc3').value;
+	an=document.getElementById('anc3').value;
+	a1=document.getElementById('a1c3').value;
+	d=(parseInt(an)-parseInt(a1))/(parseInt(n)-1);
+	an=parseInt(a1)+(parseInt(n)-1)*parseInt(d);
+
+	for (var i = 0; i <= 5; i++) {
+		array[i]=parseInt(a1)+(parseInt(i)-1)*parseInt(d);
+	}
+	document.getElementById('aka3').innerHTML=" "+an+"="+a1+"+("+n+"-1)*"+d;
+	document.getElementById('aka33').innerHTML=" "+array;
+}
+
+
+function caso4() {
+	d=document.getElementById('dc4').value;
+	an=document.getElementById('anc4').value;
+	n=document.getElementById('nc4').value;
+	a1=parseInt(an)-((parseInt(n)-1)*parseInt(d));
+
+	for (var i = 0; i <= 5; i++) {
+		array[i]=parseInt(a1)+(parseInt(i)-1)*parseInt(d);
+	}
+	document.getElementById('aka4').innerHTML=" "+an+"="+a1+"+("+n+"-1)*"+d;
+	document.getElementById('aka44').innerHTML=" "+array;
+	
+}
+
+
+function cajacaso1(){
+
+if (document.getElementById('cajacaso1').style.display=='none') {
+	document.getElementById('cajacaso1').style.display='block';
+	document.getElementById('boton1').style.backgroundColor='#9BA5C0';
+	
+	document.getElementById('cajacaso00').style.display='none';
+	document.getElementById('cajacaso2').style.display='none';
+	document.getElementById('cajacaso3').style.display='none';
+	document.getElementById('cajacaso4').style.display='none';
+	document.getElementById('boton2').style.backgroundColor='#788199';
+	document.getElementById('boton3').style.backgroundColor='#788199';
+	document.getElementById('boton4').style.backgroundColor='#788199';
+	
+} 
+else {
+
+	document.getElementById('cajacaso1').style.display='none';
+	document.getElementById('cajacaso00').style.display='block';
+	document.getElementById('boton1').style.backgroundColor='#788199';
+}	
+
+}
+
+function cajacaso2(){
+
+if (document.getElementById('cajacaso2').style.display=='none') {
+	document.getElementById('cajacaso2').style.display='block';
+	document.getElementById('boton2').style.backgroundColor='#9BA5C0';
+
+	document.getElementById('cajacaso00').style.display='none';
+	document.getElementById('cajacaso1').style.display='none';
+	document.getElementById('cajacaso3').style.display='none';
+	document.getElementById('cajacaso4').style.display='none';
+	document.getElementById('boton1').style.backgroundColor='#788199';
+	document.getElementById('boton3').style.backgroundColor='#788199';
+	document.getElementById('boton4').style.backgroundColor='#788199';
+	
+} 
+else {
+
+	document.getElementById('cajacaso2').style.display='none';
+	document.getElementById('cajacaso00').style.display='block';
+	document.getElementById('boton2').style.backgroundColor='#788199';
+
+}	
+
+}
+
+function cajacaso3(){
+
+if (document.getElementById('cajacaso3').style.display=='none') {
+	document.getElementById('cajacaso3').style.display='block';
+	document.getElementById('boton3').style.backgroundColor='#9BA5C0';
+
+	document.getElementById('cajacaso00').style.display='none';
+	document.getElementById('cajacaso1').style.display='none';
+	document.getElementById('cajacaso2').style.display='none';
+	document.getElementById('cajacaso4').style.display='none';
+	document.getElementById('boton1').style.backgroundColor='#788199';
+	document.getElementById('boton2').style.backgroundColor='#788199';
+	document.getElementById('boton4').style.backgroundColor='#788199';
+	
+} 
+else {
+
+	document.getElementById('cajacaso3').style.display='none';
+	document.getElementById('cajacaso00').style.display='block';
+	document.getElementById('boton3').style.backgroundColor='#788199';
+	
+}	
+
+}
+
+function cajacaso4(){
+
+if (document.getElementById('cajacaso4').style.display=='none') {
+	document.getElementById('cajacaso4').style.display='block';
+	document.getElementById('boton4').style.backgroundColor='#9BA5C0';
+	
+	document.getElementById('cajacaso00').style.display='none';
+	document.getElementById('cajacaso1').style.display='none';
+	document.getElementById('cajacaso3').style.display='none';
+	document.getElementById('cajacaso2').style.display='none';
+	document.getElementById('boton1').style.backgroundColor='#788199';
+	document.getElementById('boton2').style.backgroundColor='#788199';
+	document.getElementById('boton3').style.backgroundColor='#788199';
+
+} 
+else {
+
+	document.getElementById('cajacaso4').style.display='none';
+	document.getElementById('cajacaso00').style.display='block';
+	document.getElementById('boton4').style.backgroundColor='#788199';
+}	
+
+}
+
+function cerrar(){
+
+	document.getElementById('cajacaso00').style.display='block';
+	document.getElementById('cajacaso1').style.display='none';
+	document.getElementById('cajacaso2').style.display='none';
+	document.getElementById('cajacaso3').style.display='none';
+	document.getElementById('cajacaso4').style.display='none';
+	document.getElementById('boton1').style.backgroundColor='#788199';
+	document.getElementById('boton2').style.backgroundColor='#788199';
+	document.getElementById('boton3').style.backgroundColor='#788199';
+	document.getElementById('boton4').style.backgroundColor='#788199';
+}
+
+
+	
+
+
+
+</script>
+
+</body>
+</html>
